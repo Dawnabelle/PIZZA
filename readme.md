@@ -1,6 +1,6 @@
-# _PIZZA!!!_
+# _Jeanie's PIZZA!!! Delivery Service_
 
-#### _A mock order webpage for a pizza company using HTML, CSS, JavaScript and jQuery, 3.30.18_
+#### _A mock order webpage for a pizza company using HTML, CSS, JavaScript and jQuery, 4.6.18_
 
 #### By _**Dawn Mott**_
 
@@ -14,8 +14,10 @@ _A mock order webpage for a pizza company (using HTML, CSS, JavaScript and jQuer
 ## Specs
 
 Initial input:
+
 Input: click
 Output: checkbox check
+
 Input: submit click
 Output: total cost calculated and displayed
 
