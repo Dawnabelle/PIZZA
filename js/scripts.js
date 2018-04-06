@@ -22,15 +22,27 @@ Pizza.prototype.priceCost = function() {
   }
 
 // calculate final cost
-  var pizzaPrice = price + veggiePrice;
+  var pizzaPrice = price + priceCost;
   return pizzaPrice;
 }
 
+// ui logic
 $(document).ready(function(){
-  ('#pizz-form').submit(function(e){
-  e.preventDefault();
-    console.log(priceCost);
+
+// submit button
+  $('form#pizza-order').submit(function(event){
+  event.preventDefault();
   });
 
+  // variables size and veggies from input
+  var size = $('#size-value').prop('checked', true);
+
+  var veggies = []
+  $('input:checked').map(function(){
+    return $(this).val();
+    });
+
+  var totalOrder = new Pizza(size, veggies);
+  $('#pizza-output').text(totalOrder.pizzaPrice).val();
 
 });

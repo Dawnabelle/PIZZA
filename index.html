@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <title>PIZZA!!!</title>
   </head>
   <body>
@@ -17,33 +17,38 @@
         <!-- size options -->
         <div class="form-group well">
           <h5>Choose your size:</h5>
-          <input type="radio" name="size" value="tiny">
+          <input id="size-value" type="radio" name="size" value="tiny">
           <label for="">Tiny</label>
-          <input type="radio" name="size" value="medium">
+          <input id="size-value" type="radio" name="size" value="medium">
           <label for="">Medium</label>
-          <input type="radio" name="size" value="large">
+          <input id="size-value" type="radio" name="size" value="large">
           <label for="">Large</label>
-          <input type="radio" name="size" value="gigantor">
+          <input id="size-value" type="radio" name="size" value="gigantor">
           <label for="">Gigantor</label>
         </div>
         <!-- veggie options -->
         <div class="form-group well">
           <h5>Choose your toppings</h5>
-          <input type="checkbox" name="veggies" value="basil">
+          <input id="veg-group" type="checkbox" name="veggies" value="basil">
           <label for="veggies">Fresh Basil</label>
-          <input type="checkbox" name="veggies" value="tomatoes">
+          <input id="veg-group" type="checkbox" name="veggies" value="tomatoes">
           <label for="veggies">Sun-dried Tomatoes</label>
-          <input type="checkbox" name="veggies" value="olives">
+          <input id="veg-group" type="checkbox" name="veggies" value="olives">
           <label for="veggies">Black and Green Olives</label>
-          <input type="checkbox" name="veggies" value="artichoke">
+          <input id="veg-group" type="checkbox" name="veggies" value="artichoke">
           <label for="veggies">Artichoke</label>
-          <input type="checkbox" name="veggies" value="onion">
+          <input id="veg-group" type="checkbox" name="veggies" value="onion">
           <label for="veggies">Red Onion</label>
-          <input type="checkbox" name="veggies" value="chives">
+          <input id="veg-group" type="checkbox" name="veggies" value="chives">
           <label for="veggies">Chives</label>
         </div>
         <button type="submit" class="button btn-info">Submit Order</button>
       </form>
+      <div class="output">
+        <h3>Thank you for your order!</h3>
+        <p><span id="pizza-output"></span></p>
+
+      </div>
     </div>
   </body>
 </html>
