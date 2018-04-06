@@ -25,3 +25,10 @@ Pizza.prototype.priceCost = function() {
   var pizzaPrice = price + veggiePrice;
   return pizzaPrice;
 }
+
+$(document).ready(function(){
+  ('#pizz-form').submit(function(e){
+  event.preventDefault();
+  });
+
+});
