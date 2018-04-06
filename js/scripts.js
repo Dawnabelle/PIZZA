@@ -28,7 +28,6 @@ Pizza.prototype.priceCost = function() {
 }
 
 
-
 // ui logic
 
 $(document).ready(function(){
@@ -43,7 +42,6 @@ $(document).ready(function(){
 
     var size = $('.size-value:checked').val();
 
-
     var veggies = [];
     var veggyCheckedInputs = $('.veg-group:checked');
     veggyCheckedInputs.each(function() {
@@ -52,8 +50,10 @@ $(document).ready(function(){
     });
 
     var pizza = new Pizza(size, veggies);
-    $("#pizza-output").html(pizza.priceCost());
+    $("#pizza-output").html("Pizza cost: " + size + ", " + veggies + ", " + pizza.priceCost());
 
+    $('.size-value:checked').prop('checked', false);
+    $('.veg-group:checked').prop('checked', false);
   });
 
 });

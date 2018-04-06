@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <title>PIZZA!!!</title>
@@ -19,7 +20,7 @@
       <form id="pizza-order" class="">
         <!-- size options -->
         <div class="form-group well">
-          <h5>Choose your size:</h5>
+          <h5>Choose your size: </h5>
           <input class="size-value" type="radio" name="size" value="tiny">
           <label for="">Tiny</label>
           <input class="size-value" type="radio" name="size" value="medium">
@@ -31,7 +32,7 @@
         </div>
         <!-- veggie options -->
         <div class="form-group well">
-          <h5>Choose your toppings</h5>
+          <h5>Choose your toppings: </h5>
           <input class="veg-group" type="checkbox" name="veggies" value="basil">
           <label for="veggies">Fresh Basil</label>
           <input class="veg-group" type="checkbox" name="veggies" value="tomatoes">
@@ -47,9 +48,12 @@
         </div>
         <button type="submit" class="button btn-info">Submit Order</button>
       </form>
-      <div id="spacekiki" class="output">
+      <div class="output">
         <h3>Thank you for your order!</h3>
         <p><span id="pizza-output"></span></p>
+      </div>
+      <div id="spacekiki" class="output">
+
       </div>
     </div>
   </body>

@@ -2,15 +2,25 @@ body {
   background-color: #ffe6cc;
 }
 
-h2 {
-  color: rgb(146, 64, 126);
+h2, h3 {
+  color: #199696;
+  font-family: 'Abel', sans-serif;
 }
 
 h5 {
   float: left;
+  padding-right: 10px;
+  font-family: 'Abel', sans-serif;
+}
+
+p {
+  padding: 30px;
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
 }
 
 .output {
+  padding-top: 10px;
   display: none;
 }
 
@@ -28,9 +38,11 @@ h5 {
 #spacekiki {
   background: url("../img/kikispace.jpg");
   height: 500px;
-  color: lightgrey;
 }
 
+#pizza-output {
+  float: left;
+}
 #pizza-order {
   padding-top: 50px;
 }
