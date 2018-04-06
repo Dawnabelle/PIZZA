@@ -50,7 +50,7 @@ $(document).ready(function(){
     });
 
     var pizza = new Pizza(size, veggies);
-    $("#pizza-output").html("Pizza cost: " + size + ", " + veggies + ", " + pizza.priceCost());
+    $("#pizza-output").html("Pizza: " + size + ", " + veggies + ", " + "Cost: " + pizza.priceCost());
 
     $('.size-value:checked').prop('checked', false);
     $('.veg-group:checked').prop('checked', false);
