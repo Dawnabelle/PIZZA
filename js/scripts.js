@@ -27,24 +27,33 @@ Pizza.prototype.priceCost = function() {
   return "$" + pizzaPrice;
 }
 
+
+
 // ui logic
+
 $(document).ready(function(){
 
 // submit button
   $("#pizza-order").submit(function(event) {
     event.preventDefault();
     $(".output").show();
+    $(".kiki1").show();
+
+    // variables size and veggies from input
+
+    var size = $('.size-value:checked').val();
+
+
+    var veggies = [];
+    var veggyCheckedInputs = $('.veg-group:checked');
+    veggyCheckedInputs.each(function() {
+      var veggy = $(this).val();
+      veggies.push(veggy);
     });
 
-  // variables size and veggies from input
+    var pizza = new Pizza(size, veggies);
+    $("#pizza-output").html(pizza.priceCost());
 
-  var size = $('#size-value').prop('checked', true);
+  });
 
-  var veggies = []
-  $('#veg-group').prop('checked', true)
-    return $(this).val();
-
-
-  var totalOrder = new Pizza(size, veggies);
-  $("#pizza-output").html(totalOrder);
 });

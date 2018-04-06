@@ -14,11 +14,21 @@ h5 {
   display: none;
 }
 
+.kiki1 {
+  display: none;
+}
+
 .jumbotron {
   background-color: rgb(240, 200, 150);
   color: rgb(180, 106, 126);
   padding-top: 20px;
   margin-top: 20px;
+}
+
+#spacekiki {
+  background: url("../img/kikispace.jpg");
+  height: 500px;
+  color: lightgrey;
 }
 
 #pizza-order {
@@ -29,4 +39,9 @@ h5 {
   float: left;
   border-radius: 10px;
   padding: 0px 10px;
+}
+
+#kikispace {
+  padding-top: 50px;
+
 }
