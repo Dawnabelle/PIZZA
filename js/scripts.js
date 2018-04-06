@@ -28,7 +28,9 @@ Pizza.prototype.priceCost = function() {
 
 $(document).ready(function(){
   ('#pizz-form').submit(function(e){
-  event.preventDefault();
+  e.preventDefault();
+    console.log(priceCost);
   });
+
 
 });

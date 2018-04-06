@@ -8,8 +8,42 @@
     <title>PIZZA!!!</title>
   </head>
   <body>
-    <form id="pizza-order" class="">
-      <button type="submit" class="button btn-info">Submit Order</button>
-    </form>
+    <div class="container">
+      <h2>PIZZA!!!</h2>
+      <h3>Heckyeah Pizza!!</h3>
+      <h4>Order now and get it while it's hot!</h4>
+<!-- form -->
+      <form id="pizza-order" class="">
+        <!-- size options -->
+        <div class="form-group well">
+          <h5>Choose your size:</h5>
+          <input type="radio" name="size" value="tiny">
+          <label for="">Tiny</label>
+          <input type="radio" name="size" value="medium">
+          <label for="">Medium</label>
+          <input type="radio" name="size" value="large">
+          <label for="">Large</label>
+          <input type="radio" name="size" value="gigantor">
+          <label for="">Gigantor</label>
+        </div>
+        <!-- veggie options -->
+        <div class="form-group well">
+          <h5>Choose your toppings</h5>
+          <input type="checkbox" name="veggies" value="basil">
+          <label for="veggies">Fresh Basil</label>
+          <input type="checkbox" name="veggies" value="tomatoes">
+          <label for="veggies">Sun-dried Tomatoes</label>
+          <input type="checkbox" name="veggies" value="olives">
+          <label for="veggies">Black and Green Olives</label>
+          <input type="checkbox" name="veggies" value="artichoke">
+          <label for="veggies">Artichoke</label>
+          <input type="checkbox" name="veggies" value="onion">
+          <label for="veggies">Red Onion</label>
+          <input type="checkbox" name="veggies" value="chives">
+          <label for="veggies">Chives</label>
+        </div>
+        <button type="submit" class="button btn-info">Submit Order</button>
+      </form>
+    </div>
   </body>
 </html>
