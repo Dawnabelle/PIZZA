@@ -6,11 +6,10 @@ function Pizza(size, veggies) {
   this.veggies = veggies;
 }
 
-// prototype method cost pizza depending on toppings
+// prototype method cost pizza size, toppings
 Pizza.prototype.priceCost = function() {
-  var veggiePrice = (this.veggies.length * 1);
-
-// conditional statement size cost
+  var price = "";
+  // conditional statement size cost
   if (this.size === 'tiny'){
     var price = 5;
   } else if (this.size === 'medium'){
@@ -20,29 +19,32 @@ Pizza.prototype.priceCost = function() {
   } else if (this.size === 'gigantor'){
     var price = 23;
   }
+  // calculate toppings price
+  var veggiePrice = (this.veggies.length * 1);
 
 // calculate final cost
-  var pizzaPrice = price + priceCost;
-  return pizzaPrice;
+  var pizzaPrice = price + veggiePrice;
+  return "$" + pizzaPrice;
 }
 
 // ui logic
 $(document).ready(function(){
 
 // submit button
-  $('form#pizza-order').submit(function(event){
-  event.preventDefault();
-  });
+  $("#pizza-order").submit(function(event) {
+    event.preventDefault();
+    $(".output").show();
+    });
 
   // variables size and veggies from input
+
   var size = $('#size-value').prop('checked', true);
 
   var veggies = []
-  $('input:checked').map(function(){
+  $('#veg-group').prop('checked', true)
     return $(this).val();
-    });
+
 
   var totalOrder = new Pizza(size, veggies);
-  $('#pizza-output').text(totalOrder.pizzaPrice).val();
-
+  $("#pizza-output").html(totalOrder);
 });
