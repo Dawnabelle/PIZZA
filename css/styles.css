@@ -1,3 +1,32 @@
+body {
+  background-color: #ffe6cc;
+}
+
+h2 {
+  color: rgb(146, 64, 126);
+}
+
+h5 {
+  float: left;
+}
+
 .output {
   display: none;
+}
+
+.jumbotron {
+  background-color: rgb(240, 200, 150);
+  color: rgb(180, 106, 126);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+#pizza-order {
+  padding-top: 50px;
+}
+
+#kiki {
+  float: left;
+  border-radius: 10px;
+  padding: 0px 10px;
 }
