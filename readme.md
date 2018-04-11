@@ -9,30 +9,27 @@
 
 ## Description
 
-_A mock order webpage for a pizza company (using HTML, CSS, JavaScript and jQuery) to show knowledge of constructors and objects._
+_A mock order webpage for a pizza company (using HTML, CSS, JavaScript and jQuery) to show knowledge of constructors and objects.
+Allows user to select a size and toppings for pizza.
+Returns the price of the pizza depending on user's choices._
 
 ## Specs
 
-Initial input:
+Program creates a pizza order with size specification:
+Input: select(click) size: "tiny"
+Output: Pizza {"tiny", Cost: 7}
 
-Input: click
-Output: checkbox check
+Program adds chozen size, toppings and prints price:
+Input: select(click) {size: "tiny", ["garlic", "onions"]}
+Output: Pizza {"tiny", ["garlic", "onions"], Cost: 9}
 
-Input: submit click
-Output: total cost calculated and displayed
+Program creates a new order, size and adds toppings, prints price:
+Input: select(click) {size: "medium", ["tomatoes", "garlic", "peppers"]}
+Input: Pizza {"medium", ["tomatoes", "garlic", "peppers"], Cost: 15}
 
-Sample order:
-Input: click (small pizza)
-Output: checkbox check (small pizza, $10)
-
-Input: click (veggie topping)
-Output: checkbox check (veg .75)
-
-Input: click (additional veggie topping)
-Output: checkbox check (veg .75, previous veg check stays in place)
-
-Input: click (submit)
-Output: $11.50 (total cost small pizza, two veggie toppings)
+Program creates another new order, size and adds toppings, prints price:
+Input: select(click) {size: "gigantor", ["basil", "garlic", "tomatoes", "peppers"]}
+Output: Pizza {"gigantor", ["basil", "garlic", "tomatoes", "peppers"], Cost: 27}
 
 ## Setup/Installation Requirements
 
